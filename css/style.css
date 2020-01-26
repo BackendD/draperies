@@ -169,6 +169,10 @@ section {
     padding: 100px 0;
 }
 
+.content-box-md {
+    padding: 80px 0;
+}
+
 /* ==============================================
         Vertical/Horizontal Headings
 ============================================== */
@@ -224,4 +228,52 @@ section {
 
 #about-bottom img {
     margin: 0 auto;
+}
+#about-02 {
+    background-color: #f3f3f3;
+}
+
+.about-item {
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all 400ms ease-in-out;
+    margin: 5px 0;
+}
+
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #d64933;
+    margin: 0 auto;
+    border: none;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background-color: #d64933;
+    color: white;
+}
+
+.about-item:hover hr {
+    background-color: white;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
 }
