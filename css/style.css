@@ -45,6 +45,48 @@ section {
 }
 
 /* ==============================================
+                Social Icon
+============================================== */
+
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border: 1px solid white;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: white;
+    border-radius: 50%;
+    transition: all 400ms linear;
+    text-align: center;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #38A1F3;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #3f729b;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background: #0088cc;
+    border-color: transparent;
+}
+
+/* ==============================================
                     Preloader
 ============================================== */
 #preloader {
@@ -92,7 +134,7 @@ section {
 }
 
 #home-overlay {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .6);
     position: fixed;
     width: 100%;
     height: 100%;
@@ -134,17 +176,6 @@ section {
     margin: 8px 0 30px 0;
 }
 
-.btn-home {
-    color: white;
-    border: 1px solid white;
-}
-
-.btn-home:hover, .btn-home:focus {
-    color: white;
-    background-color: #d64933;
-    border: 1px solid #d64933;
-}
-
 #arrow-down {
     position: absolute;
     left: 50%;
@@ -160,6 +191,32 @@ section {
 
 #arrow-down:hover, arrow-down:focus {
     color: #d64933;
+}
+
+/* ==============================================
+                    Buttons
+============================================== */
+.btn-home {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-home:hover, .btn-home:focus {
+    color: white;
+    background-color: #d64933;
+    border: 1px solid #d64933;
+}
+
+.btn-orange {
+    color: #fff;
+    border: 1px solid #d64933;
+    background-color: #d64933;
+}
+
+.btn-orange:hover, .btn-orange:focus {
+    color: #fff;
+    background-color: #131f25;
+    border: 1px solid #131f25;
 }
 
 /* ==============================================
@@ -265,15 +322,74 @@ section {
     margin-top: 20px;
 }
 
-.about-item:hover {
+.about-item:hover, .about-item:focus {
     background-color: #d64933;
     color: white;
 }
 
-.about-item:hover hr {
+.about-item:hover hr, .about-item:focus hr {
     background-color: white;
 }
 
-.about-item:hover i {
+.about-item:hover i, .about-item:focus i {
     transform: translateY(-20px);
+}
+
+/* ==============================================
+                    Contact
+============================================== */
+#contact-right p {
+    margin: 25px 0;
+}
+
+ul.office-details {
+    list-style: none;
+    padding: 0;
+}
+
+ul.office-details li {
+    font-family: 'Open Sans', Vazir;
+    margin-top: 10px;
+    display: flex;
+}
+
+ul.office-details li i {
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
+
+#contact-right ul.social-list li a {
+    color: #131f25;
+    border: 1px solid #131f25;
+}
+
+#contact-right ul.social-list li a:hover {
+    color: white;
+    border-color: transparent;
+}
+
+#contact-left {
+    padding: 25px 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+
+#contact-left h4 {
+    font-size: 24px;
+}
+
+#contact-left p {
+    margin-bottom: 25px;
+}
+
+#contact-left form .form-control {
+    font-family: 'Open Sans', Vazir;
+    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#contact-left form textarea.form-control {
+    min-height: 165px;
 }
