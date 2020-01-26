@@ -4,7 +4,7 @@
     Fonts: Raleway, Open Sans, Vazir
     ---------------------------------------------
     Colors:
-        Chilean Fire:       #D64933
+        Chilean Fire:       #d64933
         Tangaroa:           #131f25
         White Smoke:        #f3f3f3
         white:              #ffffff
@@ -160,4 +160,120 @@ section {
 
 #arrow-down:hover, arrow-down:focus {
     color: #d64933;
+}
+
+/* ==============================================
+                Context Boxes
+============================================== */
+.content-box-lg {
+    padding: 100px 0;
+}
+
+.content-box-md {
+    padding: 80px 0;
+}
+
+/* ==============================================
+        Vertical/Horizontal Headings
+============================================== */
+.vertical-heading h5 {
+    color: #d64933;
+    font-size: 16px;
+    font-weight: 500;
+    word-spacing: 9px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 65px;
+    right: -35px;
+}
+
+.vertical-heading h2 {
+    margin: 0 35px 10px 35px;
+}
+
+.horizontal-heading h2,
+.vertical-heading h2 {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+.horizontal-heading {
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+    font-size: 16px;
+    color: #d64933;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.horizontal-heading h2 {
+    margin: 0;
+}
+
+/* ==============================================
+                    About
+============================================== */
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+#about-02 {
+    background-color: #f3f3f3;
+}
+
+.about-item {
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all 400ms ease-in-out;
+    margin: 5px 0;
+}
+
+.about-item i {
+    font-size: 42px;
+    margin: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item h3 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #d64933;
+    margin: 0 auto;
+    border: none;
+    transition: all 400ms ease-in-out;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+.about-item:hover {
+    background-color: #d64933;
+    color: white;
+}
+
+.about-item:hover hr {
+    background-color: white;
+}
+
+.about-item:hover i {
+    transform: translateY(-20px);
 }
