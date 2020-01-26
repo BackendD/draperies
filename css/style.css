@@ -393,3 +393,10 @@ ul.office-details li i {
 #contact-left form textarea.form-control {
     min-height: 165px;
 }
+
+/* ==============================================
+                    Map
+============================================== */
+#map {
+    height: 600px;
+}
