@@ -400,3 +400,20 @@ ul.office-details li i {
 #map {
     height: 600px;
 }
+
+/* ==============================================
+                    Footer
+============================================== */
+footer {
+    background: #131f25;
+    padding: 20px;
+}
+
+footer p {
+    color: white;
+    line-height: 20px;
+}
+
+footer p span {
+    color: #d64933;
+}
