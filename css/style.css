@@ -20,7 +20,7 @@ html, body {
 
 body {
     color: #131f25;
-    font-family: Raleway, Vazir;
+    font-family: 'Open sans', Vazir;
 }
 
 p {
@@ -47,7 +47,6 @@ section {
 /* ==============================================
                 Social Icon
 ============================================== */
-
 ul.social-list {
     padding: 0;
     margin-top: 20px;
@@ -189,7 +188,7 @@ ul.social-list li:nth-child(3) a:hover {
     z-index: 1;
 }
 
-#arrow-down:hover, arrow-down:focus {
+#arrow-down:hover {
     color: #d64933;
 }
 
@@ -201,7 +200,7 @@ ul.social-list li:nth-child(3) a:hover {
     border: 1px solid white;
 }
 
-.btn-home:hover, .btn-home:focus {
+.btn-home:hover {
     color: white;
     background-color: #d64933;
     border: 1px solid #d64933;
@@ -213,10 +212,20 @@ ul.social-list li:nth-child(3) a:hover {
     background-color: #d64933;
 }
 
-.btn-orange:hover, .btn-orange:focus {
+.btn-orange:hover {
     color: #fff;
     background-color: #131f25;
     border: 1px solid #131f25;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
 }
 
 /* ==============================================
@@ -322,16 +331,16 @@ ul.social-list li:nth-child(3) a:hover {
     margin-top: 20px;
 }
 
-.about-item:hover, .about-item:focus {
+.about-item:hover {
     background-color: #d64933;
     color: white;
 }
 
-.about-item:hover hr, .about-item:focus hr {
+.about-item:hover hr {
     background-color: white;
 }
 
-.about-item:hover i, .about-item:focus i {
+.about-item:hover i {
     transform: translateY(-20px);
 }
 
@@ -399,6 +408,7 @@ ul.office-details li i {
 ============================================== */
 #map {
     height: 600px;
+    z-index: 0;
 }
 
 /* ==============================================
@@ -416,4 +426,43 @@ footer p {
 
 footer p span {
     color: #d64933;
+}
+
+/* ==============================================
+                Navigation
+============================================== */
+.navbar {
+    padding: 15px 85px 15px 85px;
+    transition: all 400ms linear;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+ul.navbar-nav > li > a {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.white-nav-top {
+    background: white;
+    padding: 10px 85px;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    color: #131f25;
+}
+
+ul.navbar-nav > li > a:hover {
+    background: none;
+    color: #d64933;
+}
+
+.white-nav-top ul.navbar-nav > li > a.active {
+    color: #d64933;
+    font-weight: 500;
 }
