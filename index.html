@@ -23,12 +23,29 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body dir="rtl">
+<body dir="rtl" data-spy="scroll" data-target=".navbar-nav" data-offset="84">
 
     <!-- Preloader -->
     <div id="preloader">
         <div id="status"></div>
     </div>
+    
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a href="#home" class="navbar-brand smooth-scroll">
+                <img src="img/logo/logo.png" alt="logo">
+            </a>
+                
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">خانه</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">درباره ما</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">تماس با ما</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
     <!-- Home -->
     <section id="home">
@@ -53,12 +70,12 @@
                 </div>
 
                 <div id="home-btn">
-                    <a href="#about" class="btn btn-general btn-home" title="جزئیات بیشتر" role="button">جزئیات بیشتر</a>
+                    <a href="#about" class="btn btn-general btn-home smooth-scroll" title="جزئیات بیشتر" role="button">جزئیات بیشتر</a>
                 </div>
             </div>
         </div>
 
-        <a href="#about" id="arrow-down">
+        <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-angle-down"></i>
         </a>
     </section>
@@ -85,7 +102,7 @@
                         <div class="col-md-6">
                             <div id="about-right">
                                 <p>
-                                    کار ما از سال 92 با هدف ارائه طرح‌ها و مدل‌های جدید پرده، برای راضی کردن سلیقه‌های متفاوت شروع شد. سعی کردیم مرزهای طراحی رو گسترش بدیم و در دوخت و تزیین شیوه‌های جدیدی رو بکار بگیریم.
+                                    کار ما از سال ۹۲ با هدف ارائه طرح‌ها و مدل‌های جدید پرده، برای راضی کردن سلیقه‌های متفاوت شروع شد. سعی کردیم مرزهای طراحی رو گسترش بدیم و در دوخت و تزیین شیوه‌های جدیدی رو بکار بگیریم.
                                 </p>
 
                                 <p>
@@ -174,7 +191,7 @@
                             </div>
                             <p>
                                 جهت تماس با ما و ثبت سفارش از طریق یکی از کانال‌های ارتباطی زیر اقدام فرمایید.<br>
-                                روزهای شنبه تا پنج‌شنبه از ساعت 7:00 صبح الی 8:00 شب، بجز ایام تعطیل.
+                                روزهای شنبه تا پنج‌شنبه از ساعت ۷:۰۰ صبح الی ۸:۰۰ شب، بجز ایام تعطیل.
                             </p>
 
                             <div id="offices">
@@ -183,7 +200,7 @@
                                         <div class="office">
                                             <h4>اصفهان</h4>
                                             <ul class="office-details">
-                                                <li><i class="fas fa-mobile-alt"></i> <span  dir="ltr">0910 32 32 900</span></li>
+                                                <li><i class="fas fa-mobile-alt"></i> <span  dir="ltr">۰۹۱۰ ۳۲ ۳۲ ۹۰۰</span></li>
                                                 <li><i class="far fa-envelope"></i> <span  dir="ltr">destructor.iri@gmail.com</span  dir="ltr"></li>
                                                 <li><i class="fas fa-map-marker-alt"></i> خیابان امام خمینی، شهرک کوثر، مجتمع تجاری نور، پرده سرای نور</li>
                                             </ul>
@@ -234,7 +251,7 @@
                                 </div>
 
                                 <div class="submit-btn">
-                                    <a href="#" class="btn btn-general btn-orange" title="ارسال" role="button">ارسال</a>
+                                    <a href="" class="btn btn-general btn-orange" title="ارسال" role="button">ارسال</a>
                                 </div>
                             </form>
                         </div>
@@ -255,10 +272,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; 2020 All Right Reserved By <span>NOOR Inc.</span></p>
+                    <p dir="ltr">Copyright &copy; 2020 All Right Reserved By <span>NOOR Inc.</span></p>
                 </div>
             </div>
         </div>
+        <a href="#home" id="back-to-top" class="btn btn-ms btn-orange btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
     </footer>
     
     <!-- jQuery -->
@@ -270,6 +290,9 @@
     <!-- Leaflet Map JS -->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 
+    <!-- Easing Js -->
+    <script src="js/easing/easing.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
