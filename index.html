@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body dir="rtl" data-spy="scroll" data-target=".navbar-nav" data-offset="84">
 
@@ -33,9 +36,13 @@
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-md fixed-top">
-            <a href="#home" class="navbar-brand smooth-scroll">
-                <img src="img/logo/logo.png" alt="logo">
-            </a>
+
+            <div class="navbar-headeer">
+                <span id="mobile-nav-open-btn">&#9776;</span>
+                <a href="#home" class="navbar-brand smooth-scroll">
+                    <img src="img/logo/logo.png" alt="logo">
+                </a>
+            </div>
                 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -43,6 +50,20 @@
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">درباره ما</a></li>
                     <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">تماس با ما</a></li>
                 </ul>
+            </div>
+
+            <div id="mobile-nav">
+
+                <span id="mobile-nav-close-btn">&times;</span>
+
+                <div id="mobile-nav-content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#home">خانه</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">درباره ما</a></li>
+                        <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                
             </div>
         </nav>
     </header>
@@ -88,7 +109,7 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <div id="about-left">
+                            <div id="about-right">
                                 <div class="vertical-heading">
                                     <h5>ما کی هستیم</h5>
                                     <h2>
@@ -100,7 +121,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div id="about-right">
+                            <div id="about-left">
                                 <p>
                                     کار ما از سال ۹۲ با هدف ارائه طرح‌ها و مدل‌های جدید پرده، برای راضی کردن سلیقه‌های متفاوت شروع شد. سعی کردیم مرزهای طراحی رو گسترش بدیم و در دوخت و تزیین شیوه‌های جدیدی رو بکار بگیریم.
                                 </p>
@@ -133,7 +154,7 @@
 
                     <div class="row">
 
-                        <div class="col-md-4 col-sm-4 wow fadeInLeft">
+                        <div class="col-md-4">
                             <!-- About item 01 -->
                             <div class="about-item text-center">
                                 <i class="fa fa-rocket"></i>
@@ -143,7 +164,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="2s">
+                        <div class="col-md-4" data-wow-duration="2s">
                             <!-- About item 02 -->
                             <div class="about-item text-center">
                                 <i class="fa fa-eye"></i>
@@ -153,7 +174,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-4 col-sm-4  wow fadeInRight">
+                        <div class="col-md-4">
                             <!-- About item 03 -->
                             <div class="about-item text-center">
                                 <i class="fa fa-pencil-alt"></i>
@@ -196,7 +217,7 @@
 
                             <div id="offices">
                                 <div class="row">
-                                    <col-md-12>
+                                    <div class="col-md-12">
                                         <div class="office">
                                             <h4>اصفهان</h4>
                                             <ul class="office-details">
@@ -205,7 +226,7 @@
                                                 <li><i class="fas fa-map-marker-alt"></i> خیابان امام خمینی، شهرک کوثر، مجتمع تجاری نور، پرده سرای نور</li>
                                             </ul>
                                         </div>
-                                    </col-md-6>
+                                    </div>
                                 </div>
                             </div>
 
@@ -226,22 +247,22 @@
                                 <p>جهت بهبود عملکرد و رضایت مشتری پذیرای پیشنهادات و انتقادات شما هستیم.</p>
 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="name" placeholder="نام">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control" id="email" placeholder="ایمیل">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="phone" placeholder="تلفن">
                                         </div>
                                     </div>
-                                    <div class="col-md-6"><div class="form-group">
+                                    <div class="col-md-6 col-sm-6"><div class="form-group">
                                         <input type="text" class="form-control" id="subject" placeholder="موضوع">
                                     </div></div>
                                 </div>
@@ -276,7 +297,7 @@
                 </div>
             </div>
         </div>
-        <a href="#home" id="back-to-top" class="btn btn-ms btn-orange btn-back-to-top smooth-scroll" title="home" role="button">
+        <a href="#home" id="back-to-top" class="btn btn-ms btn-orange btn-back-to-top smooth-scroll hidden-md" title="home" role="button">
             <i class="fa fa-angle-up"></i>
         </a>
     </footer>
