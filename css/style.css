@@ -156,7 +156,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 #home-heading h1 {
     color: white;
-    font-size: 70px;
+    font-size: 64px;
     font-weight: 100;
     text-transform: uppercase;
     margin: 0;
@@ -244,7 +244,7 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================== */
 .vertical-heading h5 {
     color: #d64933;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     word-spacing: 9px;
     display: inline-block;
@@ -256,35 +256,15 @@ ul.social-list li:nth-child(3) a:hover {
 
 .vertical-heading h2 {
     margin: 0 35px 10px 35px;
-}
-
-.horizontal-heading h2,
-.vertical-heading h2 {
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 100;
     line-height: 45px;
-}
-
-.horizontal-heading {
-    margin-bottom: 80px;
-}
-
-.horizontal-heading h5 {
-    font-size: 16px;
-    color: #d64933;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.horizontal-heading h2 {
-    margin: 0;
 }
 
 /* ==============================================
                     About
 ============================================== */
-#about-right p:first-child {
+#about-left p:first-child {
     margin-bottom: 30px;
 }
 
@@ -304,7 +284,7 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 80px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     transition: all 400ms ease-in-out;
-    margin: 5px 0;
+    margin: 20px 0;
 }
 
 .about-item i {
@@ -437,7 +417,7 @@ footer p span {
 }
 
 .navbar-brand {
-    padding: 5px 15px;
+    padding: 5px 10px;
 }
 
 ul.navbar-nav > li > a {
@@ -448,7 +428,6 @@ ul.navbar-nav > li > a {
 
 .white-nav-top {
     background: white;
-    padding: 10px 85px;
     box-shadow: 0 8px 6px -9px #999;
     z-index: 2;
 }
@@ -462,7 +441,8 @@ ul.navbar-nav > li > a:hover {
     color: #d64933;
 }
 
-.white-nav-top ul.navbar-nav > li > a.active {
+.white-nav-top ul.navbar-nav li a.active {
     color: #d64933;
     font-weight: 500;
 }
+
